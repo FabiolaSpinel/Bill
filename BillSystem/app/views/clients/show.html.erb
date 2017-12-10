@@ -3,7 +3,7 @@
       <thead>
         <tr>
           <th>Name</th>
-          <th>Surname</th>
+          <th>Surename</th>
           <th>Fiscalcode</th>
           <th>Hourtariff</th>
         </tr>
@@ -12,7 +12,7 @@
       <tbody>
           <tr>
             <th><%= @client.name %></th>
-            <th><%= @client.surname %></th>
+            <th><%= @client.surename %></th>
             <th><%= @client.fiscalCode %></th>
             <th><%= @client.hourTariff %></th>
           </tr>
@@ -63,3 +63,4 @@
 <%= link_to 'Edit', edit_client_path(@client), class: "btn btn-primary btn-lg active"%>
 <%= link_to 'Back', clients_path, class: "btn btn-primary btn-lg active" %>
 <%= link_to 'add Bills', new_client_bill_path(@client), class: "btn btn-primary btn-lg active" %>
+
